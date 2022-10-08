@@ -7,6 +7,8 @@
 ## Common Path
 COMMON_PATH := device/huawei/hi6250-9-common
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Arch
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
