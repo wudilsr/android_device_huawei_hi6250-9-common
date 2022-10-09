@@ -257,10 +257,6 @@ PRODUCT_PACKAGES += \
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
 
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
