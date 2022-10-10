@@ -1,4 +1,54 @@
 <compatibility-matrix version="2.0" type="framework">
+   <hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+   </hal>
+   <hal format="hidl" optional="true">
+        <name>android.hardware.cas</name>
+        <version>1.2</version>
+        <interface>
+            <name>IMediaCasService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.drm</name>
+        <version>1.4</version>
+        <interface>
+            <name>ICryptoFactory</name>
+            <instance>wfdhdcp</instance>
+            <instance>widevine</instance>
+            <instance>clearkey</instance>
+        </interface>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>wfdhdcp</instance>
+            <instance>widevine</instance>
+            <instance>clearkey</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.health</name>
+        <version>2.1</version>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>1.2</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
@@ -10,6 +60,30 @@
         </interface>
         <fqname>@1.1::IRadio/slot1</fqname>
         <fqname>@1.1::IRadio/slot2</fqname>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.wifi</name>
+        <version>1.0-6</version>
+        <interface>
+            <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.hostapd</name>
+        <version>1</version>
+        <interface>
+            <name>IHostapd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.supplicant</name>
+        <version>1</version>
+        <interface>
+            <name>ISupplicant</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.huawei.hardware.activity_recognition</name>
